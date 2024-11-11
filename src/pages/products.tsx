@@ -68,6 +68,25 @@ const plans = [
   },
 ];
 
+const faqs = [
+  {
+    q: "What's included in the website development?",
+    a: "Our website development includes responsive design, SEO optimization, content management system, and basic analytics integration."
+  },
+  {
+    q: "How long does implementation take?",
+    a: "Implementation typically takes 4-8 weeks depending on the package and specific requirements of your project."
+  },
+  {
+    q: "Can I upgrade my plan later?",
+    a: "Yes, you can upgrade your plan at any time. We'll help you transition smoothly to your new package."
+  },
+  {
+    q: "What kind of support do you provide?",
+    a: "We provide technical support, maintenance, and consultations throughout your support period, with priority support for higher-tier plans."
+  }
+];
+
 export default function Products() {
   return (
     <>
@@ -179,24 +198,7 @@ export default function Products() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {[
-              {
-                q: 'What's included in the website development?',
-                a: 'Our website development includes responsive design, SEO optimization, content management system, and basic analytics integration.',
-              },
-              {
-                q: 'How long does implementation take?',
-                a: 'Implementation typically takes 4-8 weeks depending on the package and specific requirements of your project.',
-              },
-              {
-                q: 'Can I upgrade my plan later?',
-                a: 'Yes, you can upgrade your plan at any time. We'll help you transition smoothly to your new package.',
-              },
-              {
-                q: 'What kind of support do you provide?',
-                a: 'We provide technical support, maintenance, and consultations throughout your support period, with priority support for higher-tier plans.',
-              },
-            ].map((faq, index) => (
+            {faqs.map((faq, index) => (
               <Card key={index}>
                 <CardHeader>
                   <CardTitle className="text-lg">{faq.q}</CardTitle>

@@ -210,24 +210,20 @@ export default function Contact() {
                   {[
                     {
                       step: '1. Initial Contact',
-                      description:
-                        'We'll review your message and get back to you within 24 hours.',
+                      description: 'We\'ll review your message and get back to you within 24 hours.'
                     },
                     {
                       step: '2. Discovery Call',
-                      description:
-                        'We'll schedule a call to discuss your needs in detail.',
+                      description: 'We\'ll schedule a call to discuss your needs in detail.'
                     },
                     {
                       step: '3. Proposal',
-                      description:
-                        'You'll receive a detailed proposal tailored to your requirements.',
+                      description: 'You\'ll receive a detailed proposal tailored to your requirements.'
                     },
                     {
                       step: '4. Kickoff',
-                      description:
-                        'Once approved, we'll start working on your project immediately.',
-                    },
+                      description: 'Once approved, we\'ll start working on your project immediately.'
+                    }
                   ].map((item, index) => (
                     <div key={index} className="space-y-1">
                       <p className="font-medium">{item.step}</p>
